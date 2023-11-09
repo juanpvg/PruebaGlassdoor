@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="grid grid-cols-3 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+      <div className="mb-5 ml-5 mt-5 pl-3 pt-3 pb-3 grid grid-cols-3 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
         <Image
           className="rounded-full shadow-lg"
           src={user.picture.large}
@@ -28,15 +28,15 @@ export default async function Home() {
           </p>
         </div>
       </div>
-      <div className="grid grid-cols-3">
-        <div className="bg-slate-300">
-          <h5>Pais: {user.location.country}</h5>
+      <div className="ml-5 grid grid-cols-3">
+        <div className="bg-slate-700">
+          <h3 className="text-neutral-50">Pais: {user.location.country}</h3>
         </div>
-        <div className="bg-slate-300">
-          <h5>Ciudad {user.location.city}</h5>
+        <div className="bg-slate-700">
+          <h3 className="text-neutral-50">Ciudad {user.location.city}</h3>
         </div>
-        <div className="bg-slate-300">
-          <h5>Estado: {user.location.state}</h5>
+        <div className="bg-slate-700">
+          <h3 className="text-neutral-50">Estado: {user.location.state}</h3>
         </div>
       </div>
     </main>
