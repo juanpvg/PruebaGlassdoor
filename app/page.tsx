@@ -10,7 +10,7 @@ export default async function Home() {
 
   return (
     <main>
-      <div className="block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+      <div className="grid grid-cols-3 block rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
         <Image
           className="rounded-t-lg"
           src={user.picture.large}
@@ -27,19 +27,17 @@ export default async function Home() {
             Correo: {user.email}
           </p>
         </div>
-
-        <div className="grid grid-cols-4">
-          <div className="bg-slate-300">
-            <h5>Pais: {user.location.country}</h5>
-          </div>
-          <div className="bg-slate-300">
-            <h5>Ciudad {user.location.city}</h5>
-          </div>
-          <div className="bg-slate-300">
-            <h5>Estado: {user.location.state}</h5>
-          </div>
+      </div>
+      <div className="grid grid-cols-3">
+        <div className="bg-slate-300">
+          <h5>Pais: {user.location.country}</h5>
         </div>
-
+        <div className="bg-slate-300">
+          <h5>Ciudad {user.location.city}</h5>
+        </div>
+        <div className="bg-slate-300">
+          <h5>Estado: {user.location.state}</h5>
+        </div>
       </div>
     </main>
   )

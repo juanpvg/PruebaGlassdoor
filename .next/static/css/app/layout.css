@@ -569,8 +569,8 @@ video {
 .grid {
   display: grid;
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .rounded-lg {
   border-radius: 0.5rem;
@@ -617,6 +617,11 @@ video {
   --tw-shadow-colored: 0 2px 15px -3px var(--tw-shadow-color), 0 10px 20px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+
+main{
+    width: 1000px;
+}
+
 @media (prefers-color-scheme: dark) {
 
   .dark\:bg-neutral-700 {
@@ -634,5 +639,3 @@ video {
     color: rgb(250 250 250 / var(--tw-text-opacity));
   }
 }
-
-
